@@ -8,6 +8,7 @@ const buildGraveyard = () => {
         domString += '<div class="col-3 person-card">'
         domString += '<div class="card">'
         domString += `<div class="card-body">${corpse.name}</div>`
+        domString += `<button class="btn btn-dark revive-btn" id="${corpse.id}">REVIVE</button>`
         domString += '</div>'
         domString += '</div>'
     });
