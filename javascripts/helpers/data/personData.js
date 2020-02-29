@@ -121,25 +121,25 @@ const persons = [
     {
         id: 'person21',
         name: 'sarah',
-        isDead: false
+        isDead: true
     },
 
     {
         id: 'person22',
         name: 'stephen',
-        isDead: false
+        isDead: true
     },
 
     {
         id: 'person23',
         name: 'steven',
-        isDead: false
+        isDead: true
     },
 
     {
         id: 'person24',
         name: 'todd',
-        isDead: false
+        isDead: true
     },
 
     {
@@ -154,4 +154,9 @@ const getAlivePersons = () => {
     return persons.filter((x) => x.isDead === false);
 };
 
-export default { getAlivePersons }
+const getDeadPersons = () => {
+    return persons.filter((x) => x.isDead);
+};
+
+
+export default { getAlivePersons, getDeadPersons }
