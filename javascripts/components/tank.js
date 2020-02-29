@@ -4,8 +4,7 @@ import personData from '../helpers/data/personData.js'
 const tankBuilder = () => {
     const persons = personData.getAlivePersons();
     let domString = ''
-    domString += `<div class="card">`
-    domString += `<div class="card-header">SHARK TANK</div>`
+    domString += `<div class="card shark-tank">`
     domString += `<ul class="list-group list-group-flush">`
     persons.forEach((person) => {
         domString += `<li class="list-group-item">${person.name}</li>`
