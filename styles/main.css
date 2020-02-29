@@ -2,6 +2,15 @@ body {
     background-color: aquamarine;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
+}
+
+.person-card {
+    margin: .5rem;
+    margin-left: 2.3rem;
+}
+
+.shark-tank {
+    margin-top: 1rem;
 }

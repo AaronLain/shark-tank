@@ -4,14 +4,13 @@ import deadPersons from '../helpers/data/personData.js'
 const buildGraveyard = () => {
     const corpses = deadPersons.getDeadPersons();
     let domString = ''
-    domString += `<div class="card">`
-    domString += `<div class="card-header">GRAVEYARD</div>`
-    domString += `<ul class="list-group list-group-flush">`
     corpses.forEach((corpse) => {
-        domString += `<li class="list-group-item">${corpse.name}</li>`
+        domString += '<div class="col-3 person-card">'
+        domString += '<div class="card">'
+        domString += `<div class="card-body">${corpse.name}</div>`
+        domString += '</div>'
+        domString += '</div>'
     });
-    domString += `</ul>`
-    domString += `</div>`
 
     util.printToDom('graveyard', domString)
 }
